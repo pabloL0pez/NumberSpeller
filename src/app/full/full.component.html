@@ -1,2 +1,15 @@
-<p>NAVBAR GOES HERE</p>
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" class="fixed-header">
+        <div fxFlex="25">
+            <button mat-button style="font-size: 18px;" (click)="navigationService.navigateToRoute('home')"> numberspeller.io </button>
+        </div>
+        <div fxFlex="75" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="25px">
+            <button mat-button (click)="navigationService.navigateToRoute('number-speller')"> Number Speller </button>
+        </div>
+</mat-toolbar>
+
+<!-- This is used as a bottom margin for the modules,
+    because of the absolute positioned toolbar,
+    so the content doesn't go under it. -->
+<div class="global-margin"></div>
+
 <router-outlet></router-outlet>

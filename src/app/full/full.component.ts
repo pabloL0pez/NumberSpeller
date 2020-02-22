@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../services/navigation.service';
 
 @Component({
   selector: 'app-full',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navigationService: NavigationService) { }
 
   ngOnInit() {
   }
