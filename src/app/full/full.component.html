@@ -1,6 +1,7 @@
-<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" class="fixed-header">
+<div class="background"></div>
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center" class="fixed-header mat-elevation-z8">
         <div fxFlex="25">
-            <button mat-button style="font-size: 18px;" (click)="navigationService.navigateToRoute('home')"> numberspeller.io </button>
+            <button mat-raised-button color="accent" style="font-size: 18px;" (click)="navigationService.navigateToRoute('home')"> numberspeller.io </button>
         </div>
         <div fxFlex="75" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="25px">
             <button mat-button (click)="navigationService.navigateToRoute('number-speller')"> Number Speller </button>

@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+/* Map of colors */
+$mat-colors: (
+  mat-gray-900: mat-color($mat-gray, 900),
+  mat-gray-800: mat-color($mat-gray, 800),
+  mat-gray-700: mat-color($mat-gray, 700),
+  mat-gray-600: mat-color($mat-gray, 600),
+
+  mat-teal-900: mat-color($mat-teal, 900),
+  mat-teal-800: mat-color($mat-teal, 800),
+  mat-teal-700: mat-color($mat-teal, 700),
+  mat-teal-600: mat-color($mat-teal, 600),
+);
