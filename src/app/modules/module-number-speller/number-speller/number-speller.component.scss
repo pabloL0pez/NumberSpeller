@@ -1,9 +1,32 @@
 @import '../../../../assets/styles/mat-colors.scss';
 
-* {
-    color: white;
-}
+.encapsulation-container {
+    
+    * {
+        color: white;
+    }
 
-h1, h2, h3 {
-    text-align: center;
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    .color-teal-a400{
+        color: mat-color($mat-teal, A400);
+    }
+
+    .number-input {
+        margin-top: 4em;
+        width: 80%;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    
+    .mat-form-field-underline {
+        background-color: white !important;
+    }
+
+    .mat-form-field-ripple {
+        background-color: map-get($mat-colors, mat-teal-A400) !important;
+    }
 }

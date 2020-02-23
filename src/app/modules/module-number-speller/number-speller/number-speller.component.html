@@ -1,16 +1,15 @@
-<div fxLayout="row" fxLayoutAlign="center start" fxFlex="100">
-    <div fxLayout="column" fxLayoutAlign="center center" fxFlex="50">
-        <h1 fxFlex="100" class="color-teal-a400">
-            Welcome to numberspeller.io
-        </h1>
-        <h3 fxFlex="100">
-            To start, select your language and type in a number down bellow!
-        </h3>
-        <br><br><br><br>
-        <div fxFlex="100">
-            <mat-form-field>
+<div class="encapsulation-container">   
+    <div fxLayout="row" fxLayoutAlign="center start" fxFlex="100">
+        <div fxLayout="column" fxLayoutAlign="center center" fxFlex="50">
+            <h1 fxFlex="100" class="color-teal-a400">
+                Welcome to numberspeller.io
+            </h1>
+            <h3 fxFlex="100">
+                To start, select your language and type in a number down bellow!
+            </h3>
+            <mat-form-field fxFlex="100" class="number-input">
                 <mat-label>Your number</mat-label>
-                <input color="accent" matInput placeholder="Type in your number!" [formControl]="numberFormControl">
+                <input matInput placeholder="Type in your number!" [formControl]="numberFormControl">
             </mat-form-field>
         </div>
     </div>
