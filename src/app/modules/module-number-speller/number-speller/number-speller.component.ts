@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-number-speller',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./number-speller.component.scss']
 })
 export class NumberSpellerComponent implements OnInit {
+
+  public numberFormControl: FormControl = new FormControl();
 
   constructor() { }
 
